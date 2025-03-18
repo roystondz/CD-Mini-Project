@@ -1,0 +1,12 @@
+S -> T M B A D
+T -> int
+M -> main()
+B -> begin
+D -> end
+A -> E F
+E -> T n , i , sum = 0 ;
+F -> for ( X ; Y ; Z ) B H D
+X -> i = 1
+Y -> i <= n
+Z -> ++ i
+H -> expr = expr + expr 

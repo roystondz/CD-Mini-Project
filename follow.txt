@@ -1,0 +1,13 @@
+Calculated follows:
+follow(S) => {'$'}
+follow(T) => {'n', 'main()'}
+follow(M) => {'begin'}
+follow(B) => {'expr', 'int'}
+follow(D) => {'end', '$'}
+follow(A) => {'end'}
+follow(E) => {'for'}
+follow(F) => {'end'}
+follow(X) => {';'}
+follow(Y) => {';'}
+follow(Z) => {')'}
+follow(H) => {'end'}
