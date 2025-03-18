@@ -1,0 +1,13 @@
+Calculated firsts:
+first(S) => {'int'}
+first(T) => {'int'}
+first(M) => {'main()'}
+first(B) => {'begin'}
+first(D) => {'end'}
+first(A) => {'int'}
+first(E) => {'int'}
+first(F) => {'for'}
+first(X) => {'i'}
+first(Y) => {'i'}
+first(Z) => {'++'}
+first(H) => {'expr'}

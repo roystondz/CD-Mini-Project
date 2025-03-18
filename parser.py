@@ -268,7 +268,6 @@ def createParseTable():
         j += 1
     return (mat, grammar_is_LL, terminals)
 
-
 def validateStringUsingStackBuffer(parsing_table, grammarll1,table_term_list, input_string, term_userdef,start_symbol):
 
     print("Parsing")
@@ -322,6 +321,8 @@ def validateStringUsingStackBuffer(parsing_table, grammarll1,table_term_list, in
             else:
                 print(f"\n\nExpected Character : {stack[0]}\n Actual Character : {buffer[-1]}")
                 return "\nInvalid String! Unmatched terminal symbols"
+
+
 rules = ["S -> T M B A D",
         "T -> int",
         "M -> main()", "B -> begin",
@@ -356,13 +357,13 @@ if valid:
     # computes all FIRSTs for all non terminals 
     
     # generate formatted first and follow table then generate parse table 
-    #(parsing_table, result, tabTerm) = createParseTable()
+    (parsing_table, result, tabTerm) = createParseTable()
     # validate string input using stack-buffer concept 
-    #if ip is not None:
-    #    validity = validateStringUsingStackBuffer (parsing_table, result,tabTerm, ip, term_userdef,start_symbol) 
-    #    print(validity)
-    #else:
-    #    print("\nNo input String detected")
+    if ip is not None:
+       validity = validateStringUsingStackBuffer (parsing_table, result,tabTerm, ip, term_userdef,start_symbol) 
+       print(validity)
+    else:
+       print("\nNo input String detected")
 else:
     print(ip) 
     print("Invalid Input")
